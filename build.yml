@@ -25,10 +25,10 @@ jobs:
 
       - name: Create executable with PyInstaller
         run: |
-          pyinstaller --onefile --windowed typing_speed_test.py
+          pyinstaller --onefile --windowed TypingSpeedTest.py
           
       - name: Upload the executable
         uses: actions/upload-artifact@v2
         with:
           name: typing-speed-test
-          path: ./dist/typing_speed_test.exe
+          path: ./dist/TypingSpeedTest.py
